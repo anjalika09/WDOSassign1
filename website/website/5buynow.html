@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <meta charset="utf-8">
+        <title>Buy now</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/pngt" href="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="CSS/0all.css">
+        <link rel="stylesheet" type="text/css" href="CSS/5buynow.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="1firstvisit.html">
+                <img class="logo" src="images/logo.png" alt="logo"></a>
+
+                <!--the main navigation-->
+
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="2home.html">HOME</a></li>
+                    <li><a href="3allteatypes.html">CEYLON TEA TYPES</a></li>
+                    <li><a href="4manufacturer.html">CEYLON TEA MANUFACTURERS</a> </li>
+                    <li><a href="5buynow.html">BUY NOW</a></li>
+                    <li><a href="6contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Tea Ordering Form-->       
+<div class="container1">
+  
+    <div class="row">
+      <div class="col-25">
+        <label for="TeaManufacturers">Tea Manufacturer</label>
+      </div>
+      <div class="col-75">
+        <select id="TeaManufacturers" name="TeaManufacturers" onchange="TeaManufacturersChanged()">
+          <option value="TeaManufacturers">Select a Tea Manufacturer</option>
+          <option value="Dilma">Dilma</option>
+          <option value="Jones">Jones</option>
+          <option value="George Steuart">George Steuart</option>
+          <option value="Malwatte valley plantations">Malwatte valley plantations</option>
+          <option value="Prestige Ceylon teas">Prestige Ceylon teas</option>
+          <option value="Empire Teas">Empire Teas</option>
+        </select>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-25">
+        <label for="Packaging">Packaging</label>
+      </div>
+      <div class="col-75">
+        <select id="Packaging"  name="Packaging"  onchange="PackagingChanged()">
+          <option value="Packaging">Select the Packaging</option>
+          <option value="Paper pouches">Paper pouches</option>
+          <option value="Tins(default)">Tins(default)</option>
+          <option value="Bags">Bags</option>
+        </select>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-25">
+        <label for="Size">Size</label>
+      </div>
+      <div class="col-75">
+        <select id="Size" name="Size"  onchange="SizeChanged()">
+          <option value="Size">Select the size</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+      </div>
+    </div><br>
+    <div class="row">
+        <div class="col-25">
+          <label for="extras">Extras</label>
+        </div>
+        <div class="col-75">
+          <select id="extras" name="extras"  onchange="extrasChanged()">
+            <option value="extras">Select for extras</option>
+            <option value="Mug">Mug</option>
+            <option value="Silver pin">Silver pin</option>
+            <option value="Wooden souvenir">Wooden souvenir</option>
+          </select>
+        </div>
+      </div><br><br>
+
+    <div class="btnrow">
+      <input class="btn" type="submit" value="Place Order" onclick="PlaceOrder()"> 
+      <input class="btn" type="submit" value="Add Order" onclick="addOrder()">
+  
+    </div>
+   
+  </div>
+  
+  <div class="row">
+  
+    <div class="tcolumn">
+    <h3 class=".">Current Tea Order</h3>
+        <label class = "label" for="TeaManufacturer" id="TeaManufacturer">Tea Manufacturer:</label><br>
+        <label class = "label" for="PackagingType" id="PackagingType">Packaging Type:</label><br>
+        <label class = "label" for="Size" id="Size">Size:</label><br>
+        <label class = "label" for="Extras" id="extras">extras</label><br>
+        <label class = "label" for="CostoftheCurrentTeaOrder" id="CostoftheCurrentTeaOrder">Cost of the Current Tea Order</label><br>
+        
+  
+    </div>
+    
+    <div class="tcolumn">
+      <h3>overall reservation</h3>
+      <label class = "label" for="overallOrder">All tea(s):</label>
+      <label class = "label" id="lbl1"></label><br>
+      <label class = "label" for="overallCost">Overall Cost:</label>
+      <label class = "label" id="lbl2"></label><br>
+          
+          
+    </div>
+    
+  </div>
+
+   <!--Page footer-->
+   <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>Ceylon Tea</h2>
+<div class="content">
+          <p> Tea production is one of the main sources of foreign exchange for Sri Lanka.<br> Accounts for 2% of GDP, contributing over US$1.5 billion in 2013 to the economy of Sri Lanka.<br> It employs, directly or indirectly, over 1 million people, and in 1995 directly employed 215,338 on tea plantations and estates  <br> </p>
+<div class="social">
+<a href="https://www.facebook.com/srilankateaboard/"><span class="fa fa-facebook-f"></span></a>
+<a href="https://www.instagram.com/slteaboard/"><span class="fa fa-instagram"></span></a>
+<a href="https://twitter.com/SLTeaBoard"><span class="fa fa-twitter"></span></a>
+      </div>
+   </div>
+</div>
+<div class="right box">
+        <h2>
+Address</h2>
+<div class="content">
+<div class="place">
+    <a href="6contact.html"><span class="fa fa-map-marker"></span></a>
+    <span class="text"> No.574, Galle Road Colombo - 03 00300 Colombo, Sri Lanka </span>
+  </div>
+<div class="phone">
+<a href="6contact.html"><span class="fa fa-phone"></span></a>
+    <span class="text"> 0112 582 236 </span>
+  </div>
+<div class="email">
+<a href="6contact.html"><span class="fa fa-envelope"></span></a>
+    <span class="text">teaboard@pureceylontea.com </span>
+  </div>
+</div>
+    </div>
+  </div>
+  </footer>
+
+<script src="javascript/buynow.js"></script>
+
+<script>
+  var tea = '';
+  var Packaging = '';
+  var Size = '';
+  var extra = '';
+
+  function TeaManufacturersChanged() {
+    tea = document.getElementById("TeaManufacturer").value;
+    document.getElementById("TeaManufacturer").innerHTML = "Tea Manufacturer : " + tea;
+    cost();
+  }
+  function PackagingChanged() {
+    Packaging = document.getElementById("Packaging").value;
+    document.getElementById("Packaging").innerHTML = "Packaging : " + Packaging;
+    cost();
+  }
+  function SizeChanged() {
+    Size = document.getElementById("Size").value;
+    document.getElementById("Size").innerHTML = "Size : " + Size;
+    cost();
+  }
+  function extrasChanged() {
+    extra = document.getElementById("extra").value;
+    document.getElementById("extra").innerHTML = "extra : " + extra;
+    cost();
+  }
+  
+  function cost() {
+    
+    var costTea = 0;
+    var costpackaging = 0;
+    var costsize = 0;
+    var costextra = 0;
+    
+    if(tea == "Dilma") {
+      costTea = 1000;
+    }
+    if(tea == "Jones") {
+      costTea = 1500;
+    }
+    if(tea == "George Steuart") {
+      costTea = 1000;
+    }
+    if(tea == "Malwatte valley plantations") {
+      costTea = 2000;
+    }
+    if(tea == "Prestige Ceylon teas") {
+      costTea = 1000;
+    }
+    if(tea == "Empire teas") {
+      costTea = 2000;
+    }
+    
+    
+    if(Packaging== "Paper pouches") {
+      costpackaging = 1000;
+    }
+    if(Packaging == "Tins (default)") {
+      costpackaging = 5000;
+    }
+    if(Packaging == "Bags") {
+      costpackaging = 2500;
+    }
+    
+    if(Size== "small") {
+      costsize = 1000;
+    }
+    if(Size == "medium (default)") {
+      costsize = 2500;
+    }
+    if(Size == "large") {
+      costsize = 5000;
+    }
+
+    if(extra== "Paper pouches") {
+      costextra = 500;
+    }
+    if(extra == "silver pin") {
+      costextra = 5000;
+    }
+    if(extra == "Wooden souvenir") {
+      costextra = 1500;
+    }
+    
+    Cost = costTea + costpackaging + costsize + costextra;
+    document.getElementById("currentCost").innerHTML = "cost of current Tea order : " + Cost;
+  }
+  
+  function PlaceOrder() {
+    var TeaManufacturer = document.getElementById("lbl1").innerHTML;
+    var overallOrder = TeaManufacturer  +  tea + " , ";
+    document.getElementById("lbl1").innerHTML = overallOrder;
+                
+                
+    var CostoftheCurrentTeaOrder = document.getElementById("lbl2").innerHTML;
+    var overallCost = parseInt(Cost , 10) +  parseInt(CostoftheCurrentTeaOrder , 10);
+    document.getElementById("lbl2").innerHTML = overallCost;
+   }
+  
+  function addOrder() { 
+    document.getElementById("lbl1").innerHTML = "";
+    document.getElementById("lbl2").innerHTML = "0";
+    
+    
+    document.getElementById("currentCost").innerHTML = "cost of the tea  : " ;
+    document.getElementById("TeaManufacturer").innerHTML = "Tea Manufacturer : ";
+    document.getElementById("Packaging").innerHTML = "Packaging : ";
+    document.getElementById("Size").innerHTML = "Size : ";
+    document.getElementById("extra").innerHTML = "extra : " ;
+    
+    alert("order added Successfully. Thank you.");
+  }
+  
+</script>
+
+
+
+
+    </body>
+
+</html>
