@@ -59,21 +59,24 @@ ul li a:hover{
 .btn{
     border: 1px solid black;
     padding: 20px 40px;
-    color: rgb(8, 8, 8);
-    background-color: rgba(36, 199, 21, 0.849);
+    color:white;
+    background-color: rgba(36, 199, 21, 0.5);
     text-decoration: none;
     transition: 0.6s ease;
-    border-radius: 5%;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0 2px 20px rgba(166, 252, 145, 0.774) ;
     margin-left: 30px;
     text-align: center;
-    font-size: 18px;
+    font-size: 28px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     font-weight: 500;
+
 }
 
 .btn:hover{
-    background-color: rgb(250, 4, 147);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
